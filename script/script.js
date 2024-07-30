@@ -11,19 +11,28 @@ console.log('JS OK');
 6. Generazione password personalizzata;
 */ 
 
+/*Utility character/* 
+`
+
+
 /*Fase di preparazione  */ 
-const pickElement = document.getElementById('password-displayer') 
-console.log(pickElement)
+const resultElement = document.getElementById('password-displayer') 
+console.log(resultElement)
 
 
 /*Fase di acquisizione dei dati*/ 
-const name = prompt('Qual è il tuo nome?', 'salvatore')
+const firstName = prompt('Qual è il tuo nome?', 'salvatore')
+console.log('firstName')
 
-const lastname = prompt('Qual è il tuo cognome?', 'giacomazzo')
+const lastName = prompt('Qual è il tuo cognome?', 'giacomazzo')
+console.log('lastName')
 
 const favColor = prompt('Qual è il tuo colore preferito?', 'grigio')
+console.log('favColor')
 /*Fase di elaborazione dei dati */ 
+const password = firstName + lastName + favColor + parseInt('21');
+console.log('password')
 
 
 /*Produzione risultato */ 
-
+resultElement.innerText = `La tua password è ${firstName}${lastName}${favColor}${parseInt('21')}`

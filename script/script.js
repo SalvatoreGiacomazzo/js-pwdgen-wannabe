@@ -35,4 +35,4 @@ console.log('password')
 
 
 /*Produzione risultato */ 
-resultElement.innerText = `La tua password è ${firstName}${lastName}${favColor}${parseInt('21')}`
+resultElement.innerHTML = `La tua password è <strong>${firstName}${lastName}${favColor}${parseInt('21')}</strong>`
